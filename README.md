@@ -35,7 +35,7 @@ This project demonstrates a simple blur animation effect in Jetpack Compose usin
 1. Clone the repository:
 
    ```sh
-     git clone https://github.com/Bhavyansh03-tech/Anime_App.git
+     git clone https://github.com/Bhavyansh03-tech/Blur_Effect.git
    ```
    
 2. Open the project in Android Studio.
