@@ -18,8 +18,8 @@ This project demonstrates a simple blur animation effect in Jetpack Compose usin
 
 ### Text And Card :
 <div style="display: flex; justify-content: center; align-items: center;">
-    <img src="https://github.com/user-attachments/assets/9434206f-5292-406c-9134-509f452931b2" alt="First Screenshot" style="width: 200px; height: auto; margin-right: 10px;">
-    <img src="https://github.com/user-attachments/assets/38509a5d-e9fc-4deb-bb17-a9d3205d9105" alt="Second Screenshot" style="width: 200px; height: auto;">
+    <img src="https://github.com/user-attachments/assets/909680a9-f687-4518-9536-7f1eac5deebd" alt="First Screenshot" style="width: 200px; height: auto; margin-right: 10px;">
+    <img src="https://github.com/user-attachments/assets/d3ac24fd-11f4-4937-a2c6-e3a2d265f478" alt="Second Screenshot" style="width: 200px; height: auto;">
 </div>
 
 ### Image :
