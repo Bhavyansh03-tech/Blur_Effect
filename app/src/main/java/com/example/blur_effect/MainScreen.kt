@@ -12,6 +12,7 @@ import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CardDefaults
@@ -23,6 +24,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.BlurredEdgeTreatment
@@ -31,6 +33,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 
@@ -38,7 +41,7 @@ import androidx.navigation.NavController
 fun MainScreen(
     navController: NavController
 ) {
-    val checked by remember { mutableStateOf(true) }
+    var checked by remember { mutableStateOf(true) }
     val animatedBlur by animateDpAsState(targetValue = if (checked) 10.dp else 0.dp, label = "")
 
     Column(
@@ -90,6 +93,17 @@ fun MainScreen(
 
         Spacer(modifier = Modifier.height(24.dp))
 
-        Switch(checked = checked, onCheckedChange = { !checked })
+        Switch(checked = checked, onCheckedChange = { checked = it })
+
+        Spacer(modifier = Modifier.height(24.dp))
+
+        Text(
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 16.dp),
+            textAlign = TextAlign.Center,
+            maxLines = 2,
+            text = "But it works on ANDROID 12+",
+            color = Color.White,
+            style = MaterialTheme.typography.displaySmall
+        )
     }
 }

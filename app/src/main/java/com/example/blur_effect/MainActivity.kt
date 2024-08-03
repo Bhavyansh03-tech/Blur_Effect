@@ -13,6 +13,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             BlurEffectTheme {
+                // But only works on android 12+.
                 val navController = rememberNavController()
                 NavGraph(navController = navController)
             }
